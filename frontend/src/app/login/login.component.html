@@ -1,0 +1,23 @@
+<div class="  row justify-content-center align-items-center">
+    <mat-card class="example-card">
+        <mat-card-header class="row justify-content-center align-items-center">
+    
+          <mat-card-title>Log In</mat-card-title>
+    
+        </mat-card-header>
+        <form [formGroup]="regForm" class="wrapper">
+        <mat-card-content>
+          <input type="text" id="username" formControlName="username" placeholder="Username"/>
+          <p>{{usernameError}}</p>
+          <input type="password" id="password" formControlName="password" placeholder="Password"/>
+          <p>{{passwordError}}</p>
+    
+        </mat-card-content>
+    </form>
+        <mat-card-actions>
+            <div class = "row justify-content-center align-items-center">
+          <input type="button" (click)="attemptLogin()" value="Login" class="btn-primary">
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>

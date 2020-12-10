@@ -1,0 +1,15 @@
+<div class = "row justify-content-center align-items-center">
+
+        <div *ngIf="!userState" class = "row justify-content-center align-items-center">
+                <p routerLink='login' class="col-sm-auto">Log In</p>
+                <p routerLink='register' class="col-sm-auto">Register</p>
+        </div>
+        <div *ngIf="userState" class = "row justify-content-center align-items-center">
+                <p routerLink='login' class="col-sm-auto">Accounts</p>
+                <p routerLink='register' class="col-sm-auto">Withdraw</p>
+                <p routerLink='register' class="col-sm-auto">Transfer</p>
+                <p routerLink='register' class="col-sm-auto">Deposit</p>
+                <p routerLink='register' class="col-sm-auto">Logout</p>
+        </div>
+</div>
+<router-outlet></router-outlet>

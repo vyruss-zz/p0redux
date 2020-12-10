@@ -1,0 +1,31 @@
+<div class="  row justify-content-center align-items-center">
+<mat-card class="example-card">
+    <mat-card-header class="row justify-content-center align-items-center">
+
+      <mat-card-title>Register</mat-card-title>
+
+    </mat-card-header>
+    <form [formGroup]="regForm" class="wrapper">
+    <mat-card-content>
+        <p>Username</p>
+        <input type="text" id="username" formControlName="username" placeholder="Username"/>
+        <p>{{usernameError}}</p>
+        <p>Password</p>
+        <input type="password" id="password" formControlName="password" placeholder="Password"/>
+        <p>{{passwordError}}</p>
+        <p>First Name</p>
+        <input type="text" id="firstName" formControlName="firstName" placeholder="First Name"/>
+        <p>{{firstNameError}}</p>
+        <p>Last Name</p>
+        <input type="text" id="lastName" formControlName="lastName" placeholder="Last Name"/>
+        <p>{{lastNameError}}</p>
+    
+    </mat-card-content>
+</form>
+    <mat-card-actions>
+        <div class = "row justify-content-center align-items-center">
+      <input type="button" (click)="attemptRegistration()" value="Register" class="btn-primary">
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

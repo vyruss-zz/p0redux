@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: PZeroOverEngineered
+  datasource:
+    url: jdbc:postgresql://pega200817usf.cujfdrenfxim.us-east-2.rds.amazonaws.com:5432/bankdb
+    username: bankuser
+    password: b@nkp4$$
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        jdbc:
+          lob:
+            non_contextual_creation: true
